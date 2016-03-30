@@ -9,9 +9,9 @@ RUN curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 RUN	sudo apt-get install --yes nodejs mongodb ffmpeg frei0r-plugins
 RUN	sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
 RUN echo "Starting npm installations"
-RUN	npm install -g grunt-cli adapt-cli pm2
+RUN	npm install -g grunt-cli adapt-cli
 RUN	git clone --branch v0.1.4 https://github.com/adaptlearning/adapt_authoring.git
-RUN	cd adapt-authoring
+WORKDIR "/adapt_authoring"
 RUN	npm install --production
 RUN echo "Running adapt install, please install on port 80"
 RUN node install
