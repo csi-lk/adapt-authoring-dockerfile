@@ -1,6 +1,8 @@
+# Adapt Authoring Dockerfile
+
 A Dockerfile that follows instructions on the Adapt Authoring Wiki page for [server installation](https://github.com/adaptlearning/adapt_authoring/wiki/Install-on-Server) up to the `node install` step.
 
-Instructions
+## Instructions
 
 1. Install [Docker](https://www.docker.com/)
 
