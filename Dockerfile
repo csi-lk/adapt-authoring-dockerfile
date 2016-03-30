@@ -1,5 +1,6 @@
 # Adapt authoring server based on Ubuntu 14.04
 FROM ubuntu:14.04
+MAINTAINER Callum Silcock "callum@webanyti.me"
 RUN \
 	echo "Starting installation"
 	sudo apt-get update
