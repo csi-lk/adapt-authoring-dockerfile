@@ -13,9 +13,9 @@ RUN	npm install -g grunt-cli adapt-cli
 RUN	git clone https://github.com/adaptlearning/adapt_authoring.git
 WORKDIR "/adapt_authoring"
 RUN	npm install --production
-RUN echo -e "----------------------\nRunning adapt install, please install on port 80 \n----------------------"
-RUN node install
-RUN echo -e "----------------------\nRunning adapt server \n----------------------"
-RUN node server
-RUN echo -e "----------------------\nShould be good to go :) \n----------------------"
+#RUN echo -e "----------------------\nRunning adapt install, please install on port 80 \n----------------------"
+#RUN node install
+#RUN echo -e "----------------------\nRunning adapt server \n----------------------"
+#RUN node server
+#RUN echo -e "----------------------\nShould be good to go :) \n----------------------"
 EXPOSE 80
